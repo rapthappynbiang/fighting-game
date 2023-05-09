@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Press Start 2P", cursive;
+      }
+      body {
+        background-color: #000;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; align-items: center">
+      <div style="position: relative; display: inline-block">
+        <div
+          style="
+            position: absolute;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+          "
+        >
+          <!-- player health -->
+          <div
+            style="
+              width: 100%;
+              position: relative;
+              border-top: 2px solid #fff;
+              border-left: 2px solid #fff;
+              border-bottom: 2px solid #fff;
+              border-right: 2px solid #fff;
+              border-radius: 50px;
+              overflow: hidden;
+            "
+          >
+            <div style="background-color: red; height: 20px"></div>
+            <div
+              id="player-health"
+              style="
+                position: absolute;
+                background-color: rgb(111, 109, 186);
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+              "
+            ></div>
+          </div>
+          <!-- timer -->
+          <div
+            id="game-timer"
+            style="
+              width: 100px;
+              height: 100px;
+              flex-shrink: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #fff;
+            "
+          >
+            10
+          </div>
+          <!-- enemy health -->
+          <div
+            style="
+              width: 100%;
+              position: relative;
+              border-top: 2px solid #fff;
+              border-left: 2px solid #fff;
+              border-bottom: 2px solid #fff;
+              border-right: 2px solid #fff;
+              border-radius: 50px;
+              overflow: hidden;
+            "
+          >
+            <div style="background-color: red; height: 20px"></div>
+            <div
+              id="enemy-health"
+              style="
+                position: absolute;
+                background-color: rgb(111, 109, 186);
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+              "
+            ></div>
+          </div>
+        </div>
+        <div
+          id="displayText"
+          style="
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+          "
+        ></div>
+        <canvas></canvas>
+      </div>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
